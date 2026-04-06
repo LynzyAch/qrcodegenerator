@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Josh.Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">QR Code Generator</h1>
+
+        <div class="input-box">
+            <input type="text" class="qr-input" id="qr-input" placeholder="Enter text or url" autocomplete="off">
+            <button class="qr-btn" id="generate-btn">Generate</button>
+        </div>
+
+        <div class="qr-container" id="qrcode"></div>
+
+        <button class="qr-download-btn" id="download-btn">Download PNG</button>
+    </div>
+    <p>Developed By: <span class="dev-name">Josh.Dev</span></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
